@@ -1,0 +1,23 @@
+POST /api/auth/register
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "password123",
+  "name": "사용자명"
+}
+
+POST /api/auth/login
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+
+POST /api/auth/logout
+
+GET /api/auth/me
+
+GET /api/auth/google    # Google 로그인 시작
+GET /api/auth/naver     # 네이버 로그인 시작
