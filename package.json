@@ -1,5 +1,5 @@
 {
-  "name": "pwd-week5",
+  "name": "pwd-week6",
   "version": "1.0.0",
   "private": true,
   "main": "server.js",
@@ -7,13 +7,22 @@
     "dev": "nodemon server.js",
     "start": "node server.js",
     "test": "jest --runInBand",
-    "test:watch": "jest --watch --runInBand"
+    "test:watch": "jest --watch --runInBand",
+    "create-admin": "node create-admin.js",
+    "change-user-type": "node change-user-type.js"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "connect-mongo": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
-    "mongoose": "^8.18.2"
+    "express-session": "^1.18.2",
+    "mongoose": "^8.18.2",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport-naver": "^1.0.6"
   },
   "devDependencies": {
     "jest": "^29.7.0",
